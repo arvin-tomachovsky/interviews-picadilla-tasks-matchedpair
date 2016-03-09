@@ -34,7 +34,9 @@ Wynik algorytmu to suma ciągu arytmetycznego w postaci: 99.999 + 99.998 + ... +
 
 Natomiast w Javie maksymalna wartość dla typu prostego _int_ wynosi: **2.147.483.647**.
 
-Zatem, aby poprawnie zwrócić wynik z algorytmu musimy użyc typu prostego o większym zakresie, np. zastosowany _long_, którego maksymalna wartość wynosi już **9.223.372.036.854.775.807**. Od strony logicznej, zmiana ta nie wpływa na działanie samego algorytmu.
+Zatem, aby poprawnie zwrócić wynik z algorytmu musimy użyc typu prostego o większym zakresie, np. zastosowany _long_, którego maksymalna wartość wynosi już **9.223.372.036.854.775.807**. 
+
+Od strony logicznej, zmiana ta nie wpływa na działanie samego algorytmu.
 
 Ponadto, dodano również opcjonalny argument dodatkowy w postaci flagi logicznej (typ _boolean_) na końcu listy argumentów wywołania metody:
 ```
@@ -44,16 +46,20 @@ Działa on w sposób następujący:
 * podanie wartości 'true' dla tego argument dezaktywuje walidację danych wejściowych (tablic z liczbami)
 * pominięcie go w wywołaniu metody lub podanie wartości 'false' pozostaia aktywną walidację
 
-Jego zastosowanie ma miejsce w testach, gdzie dla celów wydajnościowych można wyłączyć walidację danych wejściowych, przyjmując, że wartości te spełniają wymóg zadany w opisie algorytmu. A jako że jest opcjonalny, to de facto nie wpływa na sygnaturę metody.
+Jego zastosowanie ma miejsce w testach, gdzie dla celów wydajnościowych można wyłączyć walidację danych wejściowych, przyjmując, że wartości te spełniają wymóg zadany w opisie algorytmu. 
+
+Jako że jest opcjonalny, to de facto nie wpływa na sygnaturę metody.
 
 Klasy pomocnicze:
 
-* _MatchedPairBruteForce_ - abc
-* _BigDecimalConverter_ - abc
-* _MatchedPairInputValidator_ - abc
+* _MatchedPairBruteForce_ - zawiera implementację 'brute-force' dla zadanego algorytmu (do celów testowych)
+* _BigDecimalConverter_ - zawiera metody konwersji danych wejściowych na wynikową listę liczb dla bazowego modułu algorytmu
+* _MatchedPairInputValidator_ - zawiera logikę walidacji danych wejściowych zgodnie z regułami opisanymi w opisie
 
 Klasy z testami:
 
-* _MatchedPairInputInvalidTest_ - abc
-* _MatchedPairInputValidTest_ - abc
-* _MatchedPairRandomInputsTest_ - abc
+* _MatchedPairInputInvalidTest_ - klasa z testami pokrywającymi przypadki danych wejściowych niezgodnych ze specyfikacją (sprawdzają walidację danych wejściowych algorytmu)
+* _MatchedPairInputValidTest_ - klasa z testami pokrywającymi przypadki danych wejściowych poprawnych (sprawdzją de facto faktyczne działanie algorytmudla poprawnych danych wejściowych)
+* _MatchedPairRandomInputsTest_ - klasa z możliwościa testowania algortymu dla losowych danych wejściowych (punktem odniesienia dla wyników algorytmu jest wynik zastosowania algorytmu 'brute-force' dla tych samych danych wejściowych)
+
+Szczegółowe opisy klas znajdują się w dokumentacji _java-doc_ w kodzie projektu.
