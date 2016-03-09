@@ -53,13 +53,13 @@ Jako że jest opcjonalny, to de facto nie wpływa na sygnaturę metody.
 Klasy pomocnicze:
 
 * _MatchedPairBruteForce_ - zawiera implementację 'brute-force' dla zadanego algorytmu (do celów testowych)
-* _BigDecimalConverter_ - zawiera metody konwersji danych wejściowych na wynikową listę liczb dla bazowego modułu algorytmu
+* _BigDecimalConverter_ - zawiera konwersję danych wejściowych na listę liczb zmiennoprzecinkowych dla bazowego modułu
 * _MatchedPairInputValidator_ - zawiera logikę walidacji danych wejściowych zgodnie z regułami opisanymi w opisie
 
 Klasy z testami:
 
 * _MatchedPairInputInvalidTest_ - klasa z testami pokrywającymi przypadki danych wejściowych niezgodnych ze specyfikacją (sprawdzają walidację danych wejściowych algorytmu)
 * _MatchedPairInputValidTest_ - klasa z testami pokrywającymi przypadki danych wejściowych poprawnych (sprawdzją de facto faktyczne działanie algorytmudla poprawnych danych wejściowych)
-* _MatchedPairRandomInputsTest_ - klasa z możliwościa testowania algortymu dla losowych danych wejściowych (punktem odniesienia dla wyników algorytmu jest wynik zastosowania algorytmu 'brute-force' dla tych samych danych wejściowych)
+* _MatchedPairRandomInputsTest_ - klasa z testami algortymu dla losowych danych wejściowych (punktem odniesienia dla wyników algorytmu jest wynik algorytmu 'brute-force' dla tych samych danych wejściowych)
 
 Szczegółowe opisy klas znajdują się w dokumentacji _java-doc_ w kodzie projektu.
