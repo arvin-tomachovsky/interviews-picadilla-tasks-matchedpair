@@ -53,7 +53,7 @@ Jako że jest opcjonalny, to de facto nie wpływa na sygnaturę metody.
 Klasy pomocnicze:
 
 * _MatchedPairBruteForce_ - zawiera implementację 'brute-force' dla zadanego algorytmu (do celów testowych)
-* _BigDecimalConverter_ - zawiera konwersję danych wejściowych na listę liczb zmiennoprzecinkowych dla bazowego modułu
+* _BigDecimalConverter_ - konwersja danych wejściowych na listę liczb zmiennoprzecinkowych dla bazowego modułu
 * _MatchedPairInputValidator_ - zawiera logikę walidacji danych wejściowych zgodnie z regułami opisanymi w opisie
 
 Klasy z testami:
