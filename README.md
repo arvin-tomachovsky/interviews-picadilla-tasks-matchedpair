@@ -12,7 +12,7 @@ Klasa z implementacją algorytmu:
 
 * _MatchedPair_ - główna klasa zawierająca implementację algorytmu zgodnie z treścią zadania
 
-##### Metoda algorytmu do zaimplementowania **(uwaga: zmiana)**:
+#### Metoda algorytmu do zaimplementowania **(uwaga: zmiana)**:
 
 Pierwotna sygnatura wymaganej do zaimplementowania metody wyglądała tak:
 ```
@@ -30,7 +30,7 @@ Na przykład dla danych wejściowych w postaci:
 
 >Q - tablica 100.000 liczb o takiej samej wartości: 10, czyli [1, 1, 1 ... 1]
 
-Wynik algorytmu to suma ciągu arytmetycznego w postaci: 99.999 + 99.998 + 99.997 + ... + 1, czyli: właśnie nasze **4.999.950.000**.
+Wynik algorytmu to suma ciągu arytmetycznego w postaci: 99.999 + 99.998 + ... + 1, czyli: **4.999.950.000**.
 
 Natomiast w Javie maksymalna wartość dla typu prostego _int_ wynosi: **2.147.483.647**.
 
