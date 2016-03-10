@@ -63,3 +63,32 @@ Klasy z testami:
 * _MatchedPairRandomInputsTest_ - klasa z testami algortymu dla losowych danych wejściowych (punktem odniesienia dla wyników algorytmu jest wynik algorytmu 'brute-force' dla tych samych danych wejściowych)
 
 Szczegółowe opisy klas znajdują się w dokumentacji _java-doc_ w kodzie projektu.
+
+## Uruchomienie projektu:
+
+#### Warunki wstępne:
+
+Aby uruchomić kod projektu, wymagane jest posiadanie: komputera z dowolnym systemem operacyjnym, zainstalowaną Javą 8, Mavenen'em i Git'em, oraz połączeniem do internetu.
+
+#### Kroki:
+
+1) Sklonowanie kodu z repozytorium na lokalny dysk twardy:
+
+```
+git clone https://github.com/daniel-fryze/inteview-medications-app-daniel-fryze.git
+```
+
+2) Nawigacja do katalogu głównego projektu:
+
+```
+cd interviews-picadilla-tasks-matchedpair
+cd task.matchedpair
+```
+
+3) Uruchomienie wszystkich testów dla projektu:
+
+```
+mvn clean test
+```
+
+Powodzenia :)
